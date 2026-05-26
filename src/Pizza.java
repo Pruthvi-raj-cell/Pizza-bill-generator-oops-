@@ -42,16 +42,22 @@ public class Pizza {
    public void getBill(){
 
        String bill = "";
-
+       if(this.inputPizzaType.equals("veg")){
+           bill += "base price of your pizza :"+300+"\n";
+       }else{
+           bill += "base price of your pizza :"+400+"\n";
+       }
        if(extraCheeseAdded){
-           bill += "extra cheese added :"+extraCheesePrice+"/n";
+           bill += "extra cheese added :"+extraCheesePrice+"\n";
        }
        if(extraToppingsAdded){
-           bill += "extra toppings added :"+extraToppingsAdded+"/n";
+           bill += "extra toppings added :"+extraToppingsPrice+"\n";
        }
        if(opForTakeAway){
-           bill += "op for take away :"+takeAwayPrice+"/n";
+           bill += "op for take away :"+takeAwayPrice+"\n";
        }
+
+       System.out.println( bill+"total bill is :"+this.basPrice);
 
    }
 

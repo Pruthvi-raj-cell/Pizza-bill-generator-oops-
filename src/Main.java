@@ -4,6 +4,7 @@ public class Main {
         p1.extraCheese();
         p1.extraTopping();
         p1.takeAway();
+        p1.getBill();
 
 
     }
