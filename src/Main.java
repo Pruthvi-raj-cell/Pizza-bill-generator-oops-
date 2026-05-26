@@ -4,7 +4,11 @@ public class Main {
         p1.extraCheese();
         p1.extraTopping();
         p1.takeAway();
-        p1.getBill();
+        //p1.getBill();
+
+        DeluxPizza dp = new DeluxPizza("non veg");
+        dp.takeAway();
+        dp.getBill();
 
 
     }
