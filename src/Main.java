@@ -1,8 +1,11 @@
 public class Main {
     static void main() {
-        Pizza pizza = new Pizza("non veg");
-        pizza.getPizzaPrice();
-        Pizza pizza2 = new Pizza("veg");
-        pizza2.getPizzaPrice();
+        Pizza p1 = new Pizza("non veg");
+        p1.extraCheese();
+        p1.extraTopping();
+        p1.takeAway();
+        p1.getPizzaPrice();
+
     }
 }
+
